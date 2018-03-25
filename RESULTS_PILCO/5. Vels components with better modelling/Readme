@@ -1,0 +1,23 @@
+Throttle				: 1730
+Targets (partial - xdot, ydot, thetadot): [0.7 -1.5 4 0]
+
+
+1st episode:
+Max cost: 0.999
+Min cost: 0.154
+Average cost: 0.651
+Stddev cost: 0.315
+
+
+5th episode:
+Max cost: 0.949
+Min cost: 0.076
+Average cost: 0.443
+Stddev cost: 0.231
+
+
+15th episode:
+Max cost: 0.950
+Min cost: 0.006
+Average cost: 0.311
+Stddev cost: 0.256
