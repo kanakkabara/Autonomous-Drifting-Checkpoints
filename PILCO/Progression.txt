@@ -1,0 +1,16 @@
+1. Full state [x y i j k w xDotWorld yDotWorld thetaDot]
+2. Speed w/o x y [i j k w xDotWorld yDotWorld thetaDot s]
+3. Speed w/o x y theta (1 - 1 weights) [thetaDot s] 
+4. Speed and thetadot weights varying [thetaDot s]
+    a. 3 - 1
+    b. 1 - 0
+    c. 10 - 1
+    d. 0 - 1
+5. Body velocity components [xDotBody yDotBody thetaDot]
+6. 4wd [xDotBody yDotBody thetaDot] 
+
+
+Ordering of results quality [Best to worst]:
+6 -> 5 -> 1 -> 4c -> 4a -> 2 and 3 should be around the same.
+
+4 b and d are used to validate the cost function, so quality doesn't matter.
