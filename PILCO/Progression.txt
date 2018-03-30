@@ -14,3 +14,36 @@ Ordering of results quality [Best to worst]:
 6 -> 5 -> 1 -> 4c -> 4a -> 2 and 3 should be around the same.
 
 4 b and d are used to validate the cost function, so quality doesn't matter.
+
+
+
+
+
+
+
+
+
+Completed new runs:
+
+4wd, 45 deg, velcs cost, 0.5 fr, 1770 thr (tr: tdot, vxb, vyb [-3.5, 0.5, 2]) ---- > (6)
+4wd, 45 deg, velcs cost, 0.5 fr, 1770 thr 30 trials (tr: tdot, vxb, vyb [-3.5, 0.5, 2])  [SUCCESSFUL FINAL]
+
+2wd, 45 deg, velcs cost, 0.8 fr, 1750 thr (tr: tdot, vxb, vyb [-3.5, 0.5, 2])
+2wd, 45deg, thetadot - speed (1 -0) cost, 0.8 fr, 1750 thr (States likely reversed)  (tr: tdot, s [-3.5, 2.1]) -----> (4b)
+2wd, 25deg, thetadot - speed (0 -1) cost, 0.8 fr, 1750 thr (k)  (tr: tdot, s [-3.5, 2.1]) -----> (4d)
+
+Speed run check
+
+
+Running:
+2wd, 25deg, thetadot - speed (0 -1) cost, 0.8 fr, 1750 thr (k)  (tr: tdot, s [-3.5, 2.1]) -----> (4d)
+
+
+
+
+Likely reusable old ones (validate)
+
+Body velocity components  ---->  (5) 
+
+
+
