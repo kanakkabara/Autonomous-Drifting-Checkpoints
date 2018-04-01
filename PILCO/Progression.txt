@@ -1,14 +1,14 @@
-1. Full state [x y i j k w xDotWorld yDotWorld thetaDot]
-2. Speed w/o x y [i j k w xDotWorld yDotWorld thetaDot s]
-3. Speed w/o x y theta (1 - 1 weights) [thetaDot s] 
-4. Speed and thetadot weights varying [thetaDot s]
+1. Full state [x y i j k w xDotWorld yDotWorld thetaDot] w 2WD 0.8 25
+2. Speed w/o x y [i j k w xDotWorld yDotWorld thetaDot s] w 2WD 0.8 25
+3*. Speed w/o x y theta (1 - 1 weights) [thetaDot s] w 2WD 0.8 25
+4*. Speed and thetadot weights varying [thetaDot s] w 2WD 0.8 25
     a. 3 - 1
     b. 1 - 0
-    c. 10 - 1
-    d. 0 - 1
-5. Body velocity components [xDotBody yDotBody thetaDot]
-6. 4wd [xDotBody yDotBody thetaDot] 
-
+    c. 0 - 1
+*5. Body velocity components [xDotBody yDotBody thetaDot] w 2WD 0.8 25 
+[s] 6. 2wd [xDotBody yDotBody thetaDot] w 2WD 0.5 45
+*7. 4wd [xDotBody yDotBody thetaDot] w 4WD 0.5 25
+*8. 4wd [xDotBody yDotBody thetaDot] w 4WD 0.5 45
 
 Ordering of results quality [Best to worst]:
 6 -> 5 -> 1 -> 4c -> 4a -> 2 and 3 should be around the same.
@@ -16,34 +16,12 @@ Ordering of results quality [Best to worst]:
 4 b and d are used to validate the cost function, so quality doesn't matter.
 
 
+---------------------------------------------------------------------------
 
+*2WD | 45 | 0.8
+*2WD | 25 | 0.5
+[s] 2WD | 45 | 0.5
 
-
-
-
-
-
-Completed new runs:
-
-4wd, 45 deg, velcs cost, 0.5 fr, 1770 thr (tr: tdot, vxb, vyb [-3.5, 0.5, 2]) ---- > (6)
-4wd, 45 deg, velcs cost, 0.5 fr, 1770 thr 30 trials (tr: tdot, vxb, vyb [-3.5, 0.5, 2])  [SUCCESSFUL FINAL]
-
-2wd, 45 deg, velcs cost, 0.8 fr, 1750 thr (tr: tdot, vxb, vyb [-3.5, 0.5, 2])
-2wd, 45deg, thetadot - speed (1 -0) cost, 0.8 fr, 1750 thr (States likely reversed)  (tr: tdot, s [-3.5, 2.1]) -----> (4b)
-2wd, 25deg, thetadot - speed (0 -1) cost, 0.8 fr, 1750 thr (k)  (tr: tdot, s [-3.5, 2.1]) -----> (4d)
-
-Speed run check
-
-
-Running:
-2wd, 25deg, thetadot - speed (0 -1) cost, 0.8 fr, 1750 thr (k)  (tr: tdot, s [-3.5, 2.1]) -----> (4d)
-
-
-
-
-Likely reusable old ones (validate)
-
-Body velocity components  ---->  (5) 
-
-
-
+4WD | 25 | 0.5
+4WD | 45 | 0.5
+4WD | 25 | 0.5
