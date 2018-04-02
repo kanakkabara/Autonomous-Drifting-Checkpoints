@@ -1,0 +1,7 @@
+Targets: [thetaDot xDotBodyFrame yDotBodyFrame]  = [-3.5 0.5 2]
+Friction 0.5
+Throttle 1770
+
+
+final episode: 
+Average cost: 0.1734
