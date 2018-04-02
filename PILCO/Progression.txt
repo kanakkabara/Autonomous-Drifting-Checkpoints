@@ -5,9 +5,11 @@
     a. 3 - 1
     b. 1 - 0
     c. 0 - 1
-*5. Body velocity components [xDotBody yDotBody thetaDot] w 2WD 0.8 25 
-[s] 6. 2wd [xDotBody yDotBody thetaDot] w 2WD 0.5 45
-*7. 4wd [xDotBody yDotBody thetaDot] w 4WD 0.5 25
+*5. 2wd [xDotBody yDotBody thetaDot] w 2WD 0.8 25 
+6. 2wd [xDotBody yDotBody thetaDot] w 2WD 0.5 45   d
+    a*. 0.5 fr 1770 thr
+    b. 0.4 fr 1770 thr
+*7. 4wd [xDotBody yDotBody thetaDot] w 4WD 0.5 25   d
 *8. 4wd [xDotBody yDotBody thetaDot] w 4WD 0.5 45
 
 Ordering of results quality [Best to worst]:
@@ -15,13 +17,31 @@ Ordering of results quality [Best to worst]:
 
 4 b and d are used to validate the cost function, so quality doesn't matter.
 
-
 ---------------------------------------------------------------------------
-
 *2WD | 45 | 0.8
 *2WD | 25 | 0.5
-[s] 2WD | 45 | 0.5
+*2WD | 45 | 0.5
 
-4WD | 25 | 0.5
-4WD | 45 | 0.5
-4WD | 25 | 0.5
+*4WD | 25 | 0.5
+*4WD | 45 | 0.5
+
+---------------------------------------------------------------------------
+DQN
+
+*Mountain Car
+*Cart Pole
+*Potential based 
+
+4a
+7
+8 
+
+---------------------------------------------------------------------------
+Robustness
+
+7a. 0.3
+7b. 0.4
+7c. 0.6
+7d. 1/2 mass
+7e. 3/4 mass
+7f. 1.2 mass
